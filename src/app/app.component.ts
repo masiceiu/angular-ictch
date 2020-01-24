@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular-smdt';
+  isOffcanvas=false;
+
+  onOffcanvasClick = function(){
+    this.isOffcanvas=!this.isOffcanvas;
+  }
 }
