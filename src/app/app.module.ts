@@ -11,8 +11,19 @@ import { HomeComponent } from './../home/home.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,AppRoutingModule ],
-  declarations: [ AppComponent ],
-  providers: [AuthService,AuthGuard],
-  bootstrap:    [ AppComponent ]
+  declarations: 
+  [ 
+    AppComponent,
+    HomeComponent 
+  ],
+  providers: 
+  [
+    AuthService,
+    AuthGuard
+  ],
+  bootstrap:    
+  [ 
+    AppComponent 
+  ]
 })
 export class AppModule { }
