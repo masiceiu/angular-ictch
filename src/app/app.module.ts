@@ -7,6 +7,7 @@ import {AuthService} from './../services/auth.service';
 import {AuthGuard} from './../services/guard.service';
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './../home/home.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,AppRoutingModule ],
