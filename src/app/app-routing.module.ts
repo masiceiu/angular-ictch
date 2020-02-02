@@ -2,7 +2,7 @@ import {NgModule} from '@angular/core';
 import {Routes,RouterModule} from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './../home/home.component';
 //import { UsersComponent } from './users/users.component';
 //import { ServersComponent } from './servers/servers.component';
 //import { UserComponent } from './users/user/user.component';
@@ -10,7 +10,7 @@ import { HomeComponent } from './home/home.component';
 //import { ServerComponent } from './servers/server/server.component';
 //import { ServersService } from './servers/servers.service';
 //import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import {AuthGuard} from './services/guard.service';
+import {AuthGuard} from './../services/guard.service';
 //import {CanDeactivateGuard} from './servers/edit-server/can-deactivate-guard.service';
 
 
