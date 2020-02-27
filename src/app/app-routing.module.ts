@@ -3,6 +3,8 @@ import {Routes,RouterModule} from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './../home/home.component';
+import { ToolBarComponent } from './../home/tool-bar/tool-bar.component';
+//import { UsersComponent } from './users/users.component';
 //import { UsersComponent } from './users/users.component';
 //import { ServersComponent } from './servers/servers.component';
 //import { UserComponent } from './users/user/user.component';
@@ -16,6 +18,7 @@ import {AuthGuard} from './../services/guard.service';
 
 const appRoutes:Routes=[
   {path:'', component:HomeComponent},
+  {path:'toolbar', component:ToolBarComponent,children:[{path:':id/:name',component:ToolBarComponent}]},
   //{path:'users', component:UsersComponent,children:[{path:':id/:name',component:UserComponent}]},
   //{path:'servers', canActivateChild:[AuthGuard],component:ServersComponent,children:[{path:':id/edit',canDeactivate:[CanDeactivateGuard],component:EditServerComponent},
   //{path:':id',component:ServerComponent}]},
