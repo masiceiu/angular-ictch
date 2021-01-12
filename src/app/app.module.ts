@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import {Routes,RouterModule} from '@angular/router';
 
-import {AppRoutingModule} from './app-routing.module';
+import {AppRoutingModule} from './app.routing.module';
 import {AuthService} from './../services/auth.service';
 import {AuthGuard} from './../services/guard.service';
 
