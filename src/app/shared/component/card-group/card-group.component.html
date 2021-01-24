@@ -1,0 +1,6 @@
+<h4 class="font-weight-normal text-center">{{cardGroup.title}}</h4>
+<div class="card-deck">
+  <div class="card shadow-sm mb-5" *ngFor="let card of cardGroup.cards">
+    <app-card [card]="card"></app-card>
+  </div>
+</div>
