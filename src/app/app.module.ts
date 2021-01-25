@@ -3,7 +3,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 // Modules
 import { AppRoutingModule } from './app-routing.module';
-import { RndModule } from './rnd/rnd.module.';
+import { RndModule } from './rnd/rnd.module';
 // Components
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
