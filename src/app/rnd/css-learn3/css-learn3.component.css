@@ -1,10 +1,10 @@
-.rnd1 .circles {
+.circles {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
-.rnd1 .circle  {
+.circle  {
   	display: flex;
   	text-align: center;
   	align-items: center;
@@ -17,19 +17,19 @@
     border-radius: 50%;
     border: 5vw solid gray;
 }
-.rnd1 .circle.green
+.circle1 .green1
 {
   	border: 5vw solid green; 
 }
-.rnd1 .circle.green >.text
+.circle .green >.text
 {
   	color: green;
 }
-.rnd1 .circle.red
+.circle.red
 {
   	border: 5vw solid red; 
 }
-.rnd1 .circle.red >.text
+..circle.red >.text
 {
   	color: red;
 }

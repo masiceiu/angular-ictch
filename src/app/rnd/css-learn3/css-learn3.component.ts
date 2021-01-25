@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-css-learn3',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CssLearn3Component implements OnInit {
 
+  @Input() rnd = 'rnd1';
   constructor() { }
 
   ngOnInit() {
