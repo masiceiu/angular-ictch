@@ -1,10 +1,10 @@
-.circles {
+.rnd1 .circles {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
-.circle  {
+.rnd1 .circle  {
   	display: flex;
   	text-align: center;
   	align-items: center;
@@ -13,23 +13,23 @@
     width: 25vw;
     height: 25vw; 
     margin: 0.2em;
-    font-size: 5vw;
+    font-size: 3vw;
     border-radius: 50%;
     border: 5vw solid gray;
 }
-.circle.green
+.rnd1 .circle.green
 {
   	border: 5vw solid green; 
 }
-.circle.green >.text
+.rnd1 .circle.green >.text
 {
   	color: green;
 }
-.circle.red
+.rnd1 .circle.red
 {
   	border: 5vw solid red; 
 }
-.circle.red >.text
+.rnd1 .circle.red >.text
 {
   	color: red;
 }
