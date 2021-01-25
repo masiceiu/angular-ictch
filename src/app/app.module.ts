@@ -19,6 +19,8 @@ import { CardGroupComponent } from './shared/component/card-group/card-group.com
 import {UrlService, HttpService} from './common/services';
 import {StudentService, TeacherService, DistrictService} from './common/services';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { CssLearn3Component } from './rnd/css-learn3/css-learn3.component';
+import { RndComponent } from './rnd/rnd/rnd.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { ProfileComponent } from './pages/profile/profile.component';
     CardComponent,
     BoxListComponent,
     CardGroupComponent,
-    ProfileComponent
+    ProfileComponent,
+    CssLearn3Component,
+    RndComponent
   ],
   imports: [
     BrowserModule,
