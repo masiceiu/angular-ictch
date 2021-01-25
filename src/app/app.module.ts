@@ -18,6 +18,7 @@ import { CardGroupComponent } from './shared/component/card-group/card-group.com
 // Services
 import {UrlService, HttpService} from './common/services';
 import {StudentService, TeacherService, DistrictService} from './common/services';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {StudentService, TeacherService, DistrictService} from './common/services
     PageNotFoundComponent,
     CardComponent,
     BoxListComponent,
-    CardGroupComponent
+    CardGroupComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
