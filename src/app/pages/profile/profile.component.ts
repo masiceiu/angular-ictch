@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
   selector: 'profile'
 })
 export class ProfileComponent {
+  public title = 'Profile';
   public isCollapsed:boolean = false;
   
    public collapsed(event:any):void {
