@@ -3,6 +3,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 // Modules
 import { AppRoutingModule } from './app-routing.module';
+import { RndModule } from './rnd/rnd.module.';
 // Components
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -19,8 +20,6 @@ import { CardGroupComponent } from './shared/component/card-group/card-group.com
 import {UrlService, HttpService} from './common/services';
 import {StudentService, TeacherService, DistrictService} from './common/services';
 import { ProfileComponent } from './pages/profile/profile.component';
-import { CssLearn3Component } from './rnd/css-learn3/css-learn3.component';
-import { RndComponent } from './rnd/rnd.component';
 
 @NgModule({
   declarations: [
@@ -36,13 +35,12 @@ import { RndComponent } from './rnd/rnd.component';
     BoxListComponent,
     CardGroupComponent,
     ProfileComponent,
-    CssLearn3Component,
-    RndComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RndModule
   ],
   providers: [
     UrlService,
