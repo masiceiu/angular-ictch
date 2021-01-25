@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RndComponent implements OnInit {
 
+  public title = 'Research And Development';
   constructor() { }
 
   ngOnInit() {

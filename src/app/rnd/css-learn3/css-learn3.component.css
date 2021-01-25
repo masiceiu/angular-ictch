@@ -1,0 +1,35 @@
+.circles {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.circle  {
+  	display: flex;
+  	text-align: center;
+  	align-items: center;
+  	justify-content: center;
+    
+    width: 25vw;
+    height: 25vw; 
+    margin: 0.2em;
+    font-size: 5vw;
+    border-radius: 50%;
+    border: 5vw solid gray;
+}
+.circle.green
+{
+  	border: 5vw solid green; 
+}
+.circle.green >.text
+{
+  	color: green;
+}
+.circle.red
+{
+  	border: 5vw solid red; 
+}
+.circle.red >.text
+{
+  	color: red;
+}
