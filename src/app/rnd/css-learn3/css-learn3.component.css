@@ -17,11 +17,11 @@
     border-radius: 50%;
     border: 5vw solid gray;
 }
-.circle1 .green1
+.circle.green
 {
   	border: 5vw solid green; 
 }
-.circle .green >.text
+.circle.green>.text
 {
   	color: green;
 }
@@ -29,7 +29,7 @@
 {
   	border: 5vw solid red; 
 }
-..circle.red >.text
+.circle.red>.text
 {
   	color: red;
 }

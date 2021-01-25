@@ -1,7 +1,4 @@
-.rnd1 {
-  font: normal;
-}
-.circle.green
+.rnd1 .circle.green>.text
 {
-  	border: 5vw solid blue; 
+  color: blue;
 }
