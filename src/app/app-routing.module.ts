@@ -16,6 +16,7 @@ const routes: Routes = [
   { path: 'rnd', component: RndComponent  },
   { path: 'district', component: DistrictComponent  },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
+  //{ path: 'json' },
   { path: '**', component: PageNotFoundComponent  }
 ];
 
