@@ -1,6 +1,7 @@
-<div class="container" *ngIf="data.SCREENS">
+<div class="container" *ngIf="data">
   <h1 class="title">
     {{ data.SCREENS.HOME.TITLE }} 
   </h1>
   <p> {{ data.SCREENS.DETAILS.TITLE }} </p>
 </div>
+<p>{{data | json }}</p>

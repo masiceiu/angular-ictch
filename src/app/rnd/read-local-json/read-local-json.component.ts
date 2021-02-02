@@ -14,7 +14,7 @@ import {
 export class ReadLocalJsonComponent implements OnInit {
 
   name = 'Test display JSON file';
-  data: any;
+  data: any = false;
   constructor(private config: ConfigService, public setting: SettingsService, private sanitizer: DomSanitizer) { }
 
   ngOnInit() {
@@ -22,7 +22,7 @@ export class ReadLocalJsonComponent implements OnInit {
     //console.log(this.setting.snippet);
     this.config.getData()
       .subscribe((data: any) => {
-        console.log(data);
+        //console.log(data);
         this.data = data;
       });
   }
