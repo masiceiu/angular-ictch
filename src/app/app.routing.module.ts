@@ -2,8 +2,8 @@ import {NgModule} from '@angular/core';
 import {Routes,RouterModule} from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './../home/home.component';
-import { ToolBarComponent } from './../home/tool-bar/tool-bar.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ToolBarComponent } from './shared/component/tool-bar/tool-bar.component';
 // import { UsersComponent } from './users/users.component';
 // import { UsersComponent } from './users/users.component';
 // import { ServersComponent } from './servers/servers.component';
