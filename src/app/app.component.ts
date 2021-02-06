@@ -10,6 +10,6 @@ export class AppComponent  {
   isOffcanvas=false;
 
   onOffcanvasClick = function(){
-    this.isOffcanvas=!this.isOffcanvas;
+    this.isOffcanvas = !this.isOffcanvas;
   }
 }
