@@ -1,9 +1,8 @@
 export const environment = {
   production: false,
   url: {
-    getStudentList: '../json/get-student-list.json',
-    getTeacherList: '../json/get-teacher-list.json',
-    //getDistrictList: '/json/get-district-list.json'
-    getDistrictList: '/assets/json/get-district-list.json'
+    getStudentList: './assets/get-student-list.json',
+    getTeacherList: './assets/get-teacher-list.json',
+    getDistrictList: './assets/json/get-district-list.json'
   }
 };
