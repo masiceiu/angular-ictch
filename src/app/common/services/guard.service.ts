@@ -15,23 +15,24 @@ export class AuthGuard implements CanActivate, CanActivateChild{
 
   }
 
-  canActivate(route:ActivatedRouteSnapshot,state:RouterStateSnapshot): Promise<boolean> | boolean
+  canActivate(route:ActivatedRouteSnapshot,state:RouterStateSnapshot): Promise<boolean>
   {
-  return  this.authService.isAuthenticated()
-    .then((authenticated:boolean)=>{
+    return  this.authService.isAuthenticated()
+    .then((authenticated)=>{
       if(authenticated){
         return true;
       }
       else{
-        this.router.navigate(['/']);
+        //this.router.navigate(['/']);
+        return false;
       }
     });
   }
 
-  canActivateChild(route:ActivatedRouteSnapshot, state:RouterStateSnapshot): Promise<boolean> | boolean
+  canActivateChild(route:ActivatedRouteSnapshot, state:RouterStateSnapshot): Promise<boolean>
   {
     return this.canActivate(route,state);
-  }         ;
+  }
 }
 
 // CanActivate is an interface provided by angular router
