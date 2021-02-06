@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
- onLoadServers(id:number){
+ /*onLoadServers(id:number){
       this.router.navigate(['/servers',id,'edit'],{queryParams:{allowedit:id},fragment:'loading'});
  }
 
@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
 
  onLogOut(){
    this.authService.logout();
- }
+ }*/
 
 }
 
