@@ -13,6 +13,8 @@ import {
   SettingsService 
 } from './index';
 import { ReadLocalJsonComponent } from './read-local-json/read-local-json.component';
+import { ImageZoomComponent } from './image-zoom/image-zoom.component';
+import { MagnifierComponent } from './magnifier/magnifier.component';
 
 @NgModule({
   imports: [
@@ -26,7 +28,7 @@ import { ReadLocalJsonComponent } from './read-local-json/read-local-json.compon
     RndComponent,
     CssLearn3Component, 
     ReadLocalJsonComponent, 
-	  ImageCropperTestComponent
+	  ImageCropperTestComponent, ImageZoomComponent, MagnifierComponent
 
   ],
   exports: [
