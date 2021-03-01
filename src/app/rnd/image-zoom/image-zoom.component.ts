@@ -10,7 +10,7 @@ export class ImageZoomComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-      /this.imageZoom('myimage', 'myresult');
+      //this.imageZoom('myimage', 'myresult');
   }
   imageZoom(imgID, resultID) { 
     var img, lens, result, cx, cy;
