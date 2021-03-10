@@ -15,6 +15,7 @@ import {
 import { ReadLocalJsonComponent } from './read-local-json/read-local-json.component';
 import { ImageZoomComponent } from './image-zoom/image-zoom.component';
 import { MagnifierComponent } from './magnifier/magnifier.component';
+import { SubscriptionTestComponent } from './subscription-test/subscription-test.component';
 
 @NgModule({
   imports: [
@@ -28,8 +29,10 @@ import { MagnifierComponent } from './magnifier/magnifier.component';
     RndComponent,
     CssLearn3Component, 
     ReadLocalJsonComponent, 
-	  ImageCropperTestComponent, ImageZoomComponent, MagnifierComponent
-
+	  ImageCropperTestComponent, 
+    ImageZoomComponent, 
+    MagnifierComponent, 
+    SubscriptionTestComponent
   ],
   exports: [
     CommonModule,
