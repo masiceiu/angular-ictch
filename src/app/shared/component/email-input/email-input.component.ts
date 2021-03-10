@@ -9,27 +9,12 @@ const emailProvider: Provider = {
   selector: 'app-email-input',
   templateUrl: './email-input.component.html',
   styleUrls: ['./email-input.component.css'],
+  viewProviders: [EmailInputDirective],
   providers: [emailProvider],
 })
 export class EmailInputComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
-  public onSubmit(event: Event): void {
-    this.stopSynchronousPostRequest(event);
-    if (this.isValid(event.target as HTMLFormElement)) {
-      alert('You are now subscribed');
-    } else {
-      alert('You need to enter a correct email address.')
-    }
-  }
-
-  private isValid(form: HTMLFormElement): boolean {
-    return form.checkValidity();
-  }
-
-  private stopSynchronousPostRequest(event: Event): void {
-    event.preventDefault();
   }
 }
