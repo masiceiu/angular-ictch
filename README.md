@@ -27,11 +27,15 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 ## Keep url help
-[angular5-social-login](https://stackblitz.com/edit/angular5-social-login)
-[angular-login-with-google-firebase](https://stackblitz.com/edit/angular-login-with-google-example)
+[1.angular5-social-login](https://stackblitz.com/edit/angular5-social-login)
+[2.angular-login-with-google-firebase](https://stackblitz.com/edit/angular-login-with-google-example)
 
-[angular-concept-canvas](https://stackblitz.com/edit/concept-canvas)
-[angular-canvas-simple](https://stackblitz.com/edit/angular-canvas-simple)
+[3.angular-concept-canvas](https://stackblitz.com/edit/concept-canvas)
+[4.angular-canvas-simple](https://stackblitz.com/edit/angular-canvas-simple)
+[5.download-canvas](https://stackblitz.com/edit/download-div-using-canvas)
+[6.print-to-canvas](https://stackblitz.com/edit/print-to-canvas)
+
+?file=package.json
 ##
 …or create a new repository on the command line
 echo "# My Angularassignment" >> README.md
