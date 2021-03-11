@@ -34,6 +34,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 4.[angular-canvas-simple](https://stackblitz.com/edit/angular-canvas-simple)
 5.[download-canvas](https://stackblitz.com/edit/download-div-using-canvas)
 6.[print-to-canvas](https://stackblitz.com/edit/print-to-canvas)
+7.[ngx-editor-reactive](https://stackblitz.com/edit/ngx-editor-sample-with-reactive-forms)
 
 ##
 …or create a new repository on the command line
