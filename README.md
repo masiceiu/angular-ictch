@@ -35,7 +35,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 5.[download-canvas](https://stackblitz.com/edit/download-div-using-canvas)
 6.[print-to-canvas](https://stackblitz.com/edit/print-to-canvas)
 
-?file=package.json
 ##
 …or create a new repository on the command line
 echo "# My Angularassignment" >> README.md
