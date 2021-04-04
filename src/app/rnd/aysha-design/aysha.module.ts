@@ -4,9 +4,10 @@ import { MyBootstrap4Component } from './my-bootstrap4/my-bootstrap4.component';
 
 @NgModule({
   imports: [
-    CommonModule, 
-    MyBootstrap4Component
+    CommonModule
   ],
-  declarations: []
+  declarations: [
+    MyBootstrap4Component
+  ]
 })
 export class AyshaModule { }
