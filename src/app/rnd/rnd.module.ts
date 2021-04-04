@@ -16,6 +16,7 @@ import { ReadLocalJsonComponent } from './read-local-json/read-local-json.compon
 import { ImageZoomComponent } from './image-zoom/image-zoom.component';
 import { MagnifierComponent } from './magnifier/magnifier.component';
 import { SubscriptionTestComponent } from './subscription-test/subscription-test.component';
+import { MyBootstrap4Component } from './aysha-design/my-bootstrap4/my-bootstrap4.component';
 
 @NgModule({
   imports: [
@@ -32,7 +33,7 @@ import { SubscriptionTestComponent } from './subscription-test/subscription-test
 	  ImageCropperTestComponent, 
     ImageZoomComponent, 
     MagnifierComponent, 
-    SubscriptionTestComponent
+    SubscriptionTestComponent, MyBootstrap4Component
   ],
   exports: [
     CommonModule,
