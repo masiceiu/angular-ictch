@@ -8,6 +8,9 @@ import { MyBootstrap4Component } from './my-bootstrap4/my-bootstrap4.component';
   ],
   declarations: [
     MyBootstrap4Component
+  ],
+  exports: [
+    MyBootstrap4Component,
   ]
 })
 export class AyshaModule { }
