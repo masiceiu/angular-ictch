@@ -1,4 +1,8 @@
-<main class="container">
+<main class="container" *ngIf="true">
+  <app-aysha-bootstrap4></app-aysha-bootstrap4>
+  <hr />
+</main>
+<main class="container" *ngIf="false">
   <div class="page-header px-3 py-3 mx-auto text-center">
     <h3 class="font-weight-normal text-center circle green">{{title}}</h3>
   </div>
@@ -9,4 +13,5 @@
   <app-image-zoom></app-image-zoom>
   <app-magnifier></app-magnifier> -->
   <hr />
+  <app-aysha-bootstrap4></app-aysha-bootstrap4>
 </main>
