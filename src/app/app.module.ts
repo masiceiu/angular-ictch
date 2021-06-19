@@ -20,6 +20,7 @@ import { CardGroupComponent } from './shared/component/card-group/card-group.com
 import {UrlService, HttpService} from './common/services';
 import {StudentService, TeacherService, DistrictService} from './common/services';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { EmailInputComponent } from './shared/component/email-input/email-input.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
     BoxListComponent,
     CardGroupComponent,
     ProfileComponent,
+    EmailInputComponent,
   ],
   imports: [
     BrowserModule,

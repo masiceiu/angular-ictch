@@ -1,3 +1,13 @@
 .page-header {
   max-width: 960px;
 }
+
+/* image zoom */
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  /*set the size of the lens:*/
+  width: 40px;
+  height: 40px;
+}
+
