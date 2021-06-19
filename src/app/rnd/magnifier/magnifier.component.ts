@@ -13,8 +13,8 @@ export class MagnifierComponent implements OnInit {
   ngOnInit() {
     this.magnify("myimage", 3);
   }
-  magnify(imgID, zoom) {
-    var img, glass, w, h, bw;
+  magnify(imgID:any, zoom:any) {
+    var img:any, glass:any, w:any, h:any, bw:any;
     img = document.getElementById(imgID);
     /*create magnifier glass:*/
     glass = document.createElement("DIV");
@@ -35,7 +35,7 @@ export class MagnifierComponent implements OnInit {
     /*and also for touch screens:*/
     glass.addEventListener("touchmove", moveMagnifier);
     img.addEventListener("touchmove", moveMagnifier);
-    function moveMagnifier(e) {
+    function moveMagnifier(e:any) {
       var pos, x, y;
       /*prevent any other actions that may occur when moving over the image*/
       e.preventDefault();
@@ -63,7 +63,7 @@ export class MagnifierComponent implements OnInit {
       glass.style.backgroundPosition =
         "-" + (x * zoom - w + bw) + "px -" + (y * zoom - h + bw) + "px";
     }
-    function getCursorPos(e) {
+    function getCursorPos(e:any) {
       var a,
         x = 0,
         y = 0;

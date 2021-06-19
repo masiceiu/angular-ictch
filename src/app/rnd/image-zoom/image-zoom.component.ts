@@ -12,8 +12,8 @@ export class ImageZoomComponent implements OnInit {
   ngOnInit() {
       //this.imageZoom('myimage', 'myresult');
   }
-  imageZoom(imgID, resultID) { 
-    var img, lens, result, cx, cy;
+  imageZoom(imgID:any, resultID:any) { 
+    var img:any, lens:any, result:any, cx:any, cy:any;
     img = document.getElementById(imgID);
     result = document.getElementById(resultID);
     /*create lens:*/
@@ -33,7 +33,7 @@ export class ImageZoomComponent implements OnInit {
     /*and also for touch screens:*/
     lens.addEventListener("touchmove", moveLens);
     img.addEventListener("touchmove", moveLens);
-    function moveLens(e) {
+    function moveLens(e:any) {
       var pos, x, y;
       /*prevent any other actions that may occur when moving over the image:*/
       e.preventDefault();
@@ -53,7 +53,7 @@ export class ImageZoomComponent implements OnInit {
       /*display what the lens "sees":*/
       result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
     }
-    function getCursorPos(e) {
+    function getCursorPos(e:any) {
       var a, x = 0, y = 0;
       e = e || window.event;
       /*get the x and y positions of the image:*/
