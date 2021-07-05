@@ -19,6 +19,8 @@ import { ReadLocalJsonComponent } from './read-local-json/read-local-json.compon
 import { ImageZoomComponent } from './image-zoom/image-zoom.component';
 import { MagnifierComponent } from './magnifier/magnifier.component';
 import { SubscriptionTestComponent } from './subscription-test/subscription-test.component';
+import { BlobDownloadComponent } from './blob-download/blob-download.component';
+import { BlobToSafeUrlComponent } from './blob-to-safe-url/blob-to-safe-url.component';
 
 @NgModule({
   imports: [
@@ -36,7 +38,8 @@ import { SubscriptionTestComponent } from './subscription-test/subscription-test
 	  ImageCropperTestComponent, 
     ImageZoomComponent, 
     MagnifierComponent, 
-    SubscriptionTestComponent
+    SubscriptionTestComponent, 
+    BlobDownloadComponent, BlobToSafeUrlComponent
   ],
   exports: [
     CommonModule,
