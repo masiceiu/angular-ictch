@@ -13,20 +13,4 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
- /*onLoadServers(id:number){
-      this.router.navigate(['/servers',id,'edit'],{queryParams:{allowedit:id},fragment:'loading'});
- }
-
- onLogIn()
- {
-   this.authService.login();
- }
-
- onLogOut(){
-   this.authService.logout();
- }*/
-
 }
-
-
-// router.navigate method takes elements which configure the path as arguments

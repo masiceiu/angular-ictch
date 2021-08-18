@@ -9,7 +9,6 @@ import {AuthGuard} from './common/services/guard.service';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
-import { ToolBarComponent } from './shared/component/tool-bar/tool-bar.component';
 
 @NgModule({
   imports:      
@@ -21,8 +20,7 @@ import { ToolBarComponent } from './shared/component/tool-bar/tool-bar.component
   declarations: 
   [ 
     AppComponent,
-    HomeComponent,
-    ToolBarComponent 
+    HomeComponent
   ],
   providers: 
   [

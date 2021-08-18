@@ -34,7 +34,3 @@ export class AuthGuard implements CanActivate, CanActivateChild{
     return this.canActivate(route,state);
   }
 }
-
-// CanActivate is an interface provided by angular router
-
-// angular will implement the code before loading the required route and pass that as arguments to our canACtivate method
