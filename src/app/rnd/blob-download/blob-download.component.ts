@@ -9,7 +9,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 export class BlobDownloadComponent implements OnInit {
 
   name = 'Angular 5';
-  fileUrl;
+  fileUrl:any;
   constructor(private sanitizer: DomSanitizer) {  }
   ngOnInit() {
     const data = 'some text';

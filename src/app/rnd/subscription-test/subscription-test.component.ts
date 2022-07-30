@@ -14,15 +14,14 @@ name = 'Angular 6';
   sub: ISubscription;
 
   constructor(private subscriptionService: SubscriptionService) {
-
-  }
-
-  ngOnInit() {
     this.sub = this.subscriptionService.output.subscribe(v => {
       if(v) {
         this.name = v.name;
       }
     })
+  }
+
+  ngOnInit() {
     /*
     let newData = new ResultData();
     newData.name = "Angular 6 Subscription Test";

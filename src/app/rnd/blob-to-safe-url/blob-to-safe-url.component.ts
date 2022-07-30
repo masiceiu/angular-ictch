@@ -10,19 +10,21 @@ import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 })
 export class BlobToSafeUrlComponent implements OnInit {
 
-    ngOnInit() {
-      this.loadImage().subscribe(i=>
-      {
-        this.image = i
-        this.imageURL = this.sanitizer.bypassSecurityTrustUrl(URL.createObjectURL(this.image))
-      })
-  }
   URL: string = `https://fireflysemantics.github.io/i/service-parts-help/electrocardiogram-36732.png`;
-  image:Blob
+  image:Blob;
   imageURL:SafeUrl
 
   constructor(private h:HttpClient, private sanitizer: DomSanitizer) {
+    this.image = new Blob();
+    this.imageURL = this.sanitizer.bypassSecurityTrustUrl("");
+    this.loadImage().subscribe(i=>
+    {
+      this.image = i
+      this.imageURL = this.sanitizer.bypassSecurityTrustUrl(URL.createObjectURL(this.image))
+    })
   }
+  ngOnInit() {
+}
 
   loadImage():Observable<Blob> {
       return this.h.get(this.URL, {
