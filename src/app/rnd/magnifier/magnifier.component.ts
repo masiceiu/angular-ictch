@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-magnifier',
@@ -11,7 +12,7 @@ export class MagnifierComponent implements OnInit {
 
   imgID = "Angular";
   ngOnInit() {
-    this.magnify("myimage", 3);
+    //this.magnify("myimage", 3);
   }
   magnify(imgID:any, zoom:any) {
     var img:any, glass:any, w:any, h:any, bw:any;
@@ -77,6 +78,19 @@ export class MagnifierComponent implements OnInit {
       x = x - window.pageXOffset;
       y = y - window.pageYOffset;
       return { x: x, y: y };
+    }
+  }
+  /*########### Template Driven Form ###########*/
+  isSubmitted = false;
+  submitForm(form: NgForm) {
+    this.isSubmitted = true;
+    if(!form.valid) {
+      alert('form not valid')
+    } else {
+      //console.log(form,);
+      //alert(JSON.stringify(form.value))
+      //this.magnify("myimage", 3);
+      this.magnify(form.value.imgMagnifier, 3);
     }
   }
 }

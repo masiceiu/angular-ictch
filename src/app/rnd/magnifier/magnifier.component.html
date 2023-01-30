@@ -5,7 +5,28 @@
 https://scontent-sin6-3.xx.fbcdn.net/v/t1.15752-9/150895136_123185509716345_398625516960877184_n.jpg?_nc_cat=110&ccb=3&_nc_sid=ae9488&_nc_eui2=AeHFSNYPKC7g4BnqoJnKby_YayAD3eWOI9hrIAPd5Y4j2Eyn75IAKmbh7Ha0vvb63nw&_nc_ohc=9qBbH-s6p8QAX_bPg8D&_nc_ht=scontent-sin6-3.xx&oh=d382d5de9572b79eac9fef9470fd05c9&oe=60641EF1
 -->
 <div class="img-magnifier-container">
-  <img id="myimage" src="https://wittlock.github.io/ngx-image-zoom/assets/fullres.jpg" width="600" height="400">
+  <img id="myimage1" src="https://wittlock.github.io/ngx-image-zoom/assets/fullres.jpg" width="600" height="400">
+  <img id="myimage2" src="https://wittlock.github.io/ngx-image-zoom/assets/fullres.jpg" width="600" height="400">
 </div>
+<form #myForm="ngForm" (submit)="submitForm(myForm)" novalidate>
+  <!-- Gender -->
+  <div class="group-gap">
+    <h5 class="mb-3">Gender</h5>
+    <div class="d-block my-3">
+
+      <div class="">
+        <input id="1" type="radio" class="" value="myimage1" name="imgMagnifier" ngModel required>
+        <label class="" for="myimage1">image1</label>
+      </div>
+      <div class="">
+        <input id="2" type="radio" class="" value="myimage2" name="imgMagnifier" ngModel required>
+        <label class="" for="myimage2">image2</label>
+      </div>
+    </div>
+  </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-danger btn-lg btn-block">Find out gender</button>
+</form><!-- Form ends -->
 
 <p>Feel free to change the strength of the magnifier glass when initiating the magnify function.</p>
