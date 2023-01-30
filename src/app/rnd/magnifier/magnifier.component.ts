@@ -12,7 +12,7 @@ export class MagnifierComponent implements OnInit {
 
   imgID = "Angular";
   ngOnInit() {
-    this.magnify("myimage", 3);
+    this.magnify("myimage1", 3);
   }
   magnify(imgID:any, zoom:any) {
     var img:any, glass:any, w:any, h:any, bw:any;
